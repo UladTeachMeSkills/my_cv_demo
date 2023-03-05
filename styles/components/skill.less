@@ -1,0 +1,41 @@
+.skill {
+    max-width: 200px;
+    padding: 5px;
+
+    svg {
+        display: inline-flex;
+        vertical-align: bottom;
+        width: 100%;
+
+        .meter {
+            stroke-width: 8px;
+            fill: none;
+            transition: stroke-dashoffset 1s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+            transform-origin: center center;
+            transform: rotate(-90deg) scaleX(-1);
+            cursor: pointer;
+        }
+
+        circle {
+            stroke: transparent;
+            stroke-width: 8px;
+            stroke-dasharray: 0;
+            fill: none;
+        }
+
+        text {
+            .typography__option-medium();
+            fill: @color_primary_text;
+            cursor: pointer;
+        }
+    }
+
+    &__name {
+        padding-top: 40px;
+
+        p {
+            .typography__extra-medium();
+            text-align: center;
+        }
+    }
+}

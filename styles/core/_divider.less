@@ -1,0 +1,24 @@
+.divider {
+    &__text {
+        display: flex;
+        .typography__header-small();
+        align-items: center;
+
+        &::before,
+        &::after {
+            content: "";
+            height: 2px;
+            background-color: @color_primary_text-disabled;
+        }
+
+        &::before {
+            flex-grow: 0.25;
+            margin-right: 20px;
+        }
+
+        &::after {
+            flex-grow: 0.75;
+            margin-left: 50px;
+        }
+    }
+}

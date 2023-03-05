@@ -1,0 +1,79 @@
+.job-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    perspective: 1000px;
+
+    &__description {
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background: #123fa9;
+        background: linear-gradient(90deg, #3b1dff60 0%, #15b9b960 100%);
+        z-index: 100;
+        height: 100%;
+
+        p {
+            .typography__paragraph-small();
+            padding-bottom: 15px;
+            white-space: pre-line;
+        }
+
+        &::-webkit-scrollbar {
+            width: 0 !important;
+        }
+    }
+
+    .front,
+    .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        backface-visibility: hidden;
+        border-radius: 12px;
+    }
+
+    .front {
+        padding: 50px;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &::after {
+            content: attr(data-period);
+            .typography__extra-small();
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    .back {
+        transform: rotateY(180deg);
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+        }
+    }
+
+    &:hover .front {
+        transform: rotateY(180deg);
+    }
+    &:hover .back {
+        transform: rotateY(360deg);
+    }
+}

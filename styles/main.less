@@ -1,0 +1,19 @@
+body {
+    font-family: @Font_Poppins;
+    background-color: @color_background;
+    color: @color_primary_text;
+    transition: all 0.5s ease-in-out;
+
+    &::-webkit-scrollbar {
+        width: 0 !important;
+    }
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    @media @laptop {
+        padding: 0 30px;
+    }
+}

@@ -1,0 +1,18 @@
+span {
+    &.progress {
+        display: block;
+        width: 100%;
+        height: 24px;
+        background: linear-gradient(90deg, @color_primary_option-first 18.63%, @color_primary_option-last 78.88%);
+        border-radius: 50px;
+        position: relative;
+
+        &::after {
+            content: attr(data-description);
+            .typography__extra-small();
+            position: absolute;
+            bottom: 105%;
+            right: 2.5%;
+        }
+    }
+}

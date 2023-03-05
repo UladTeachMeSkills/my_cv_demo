@@ -1,0 +1,54 @@
+.footer {
+    &__wrapper {
+        padding: 80px 50px 200px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media @mobile {
+            padding: 40px 0 100px 0;
+        }
+    }
+
+    &__links {
+        padding-bottom: 50px;
+        ul {
+            display: flex;
+
+            li {
+                margin: 0 20px;
+            }
+
+            a {
+                .typography__option-medium();
+                color: @color_primary_text;
+                text-decoration: none;
+
+                &:before {
+                    font-family: "@{icomoon-font-family}" !important;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &__title {
+        h2 {
+            .typography__header-small();
+
+            @media @mobile {
+                text-align: center;
+            }
+        }
+    }
+
+    &__subtitle {
+        h3 {
+            .typography__paragraph-small();
+        }
+    }
+
+    &__download {
+        margin-top: 25px;
+    }
+}
