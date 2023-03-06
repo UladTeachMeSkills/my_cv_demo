@@ -49,7 +49,7 @@
     {
       "name": "Alar Studios",
       "period": "01/2022 - PRESENT",
-      "front": "https://svgshare.com/i/qrt.svg",
+      "front": "https://i.imgur.com/gXCIHjN.png",
       "back": "https://i.imgur.com/11jnrmi.png",
       "description": "<p>\nProject: Portal for the management of Organizations, their management and work on identified problems and their solutions.\nRegion: USA.\nStack: React, TypeSctipt, MobX, Antd, Vite.\nResponsibilities: Change / Creation / Development / Support / Adding functionality.\n Position: Frontend developer.\n</p>\n<p>\nProject: The sister platform for helping people with their psychological or physical problems in the field of medicine.\n Region: USA.\nStack: JS, CoffeeScript.\nResponsibilities: Adaptation to WCAG / Identification of bugs and their correction / Implementation of new functionality / Issuance of tasks to work / Monitoring the progress of work / Solving complex conflict situations when combining different development branches.\nPosition: Frontend Developer / Team Lead WCAG.\n</p>\n<p>\nProject: The main platform for helping people with their psychological or physical problems in the field of medicine.\nRegion: USA.\nStack: JS, CoffeeScript.\nResponsibilities: Adaptation to WCAG / Identification of bugs and their correction / Implementation of new functionality.\nPosition: Frontend developer.\n</p>\n<p>\nProject: Admin panel for managing platforms to help people with their psychological or physical problems (KMS).\nRegion: USA.\nStack: React, TypeSctipt, Atom.\nResponsibilities: Change / Create / Add functionality.\nPosition: Frontend developer.\n</p>"
     },
@@ -63,24 +63,24 @@
     {
       "name": "TeachMeSkills",
       "period": "Part time",
-      "front": "https://svgshare.com/i/qsE.svg",
+      "front": "https://i.imgur.com/rVMKfOi.png",
       "back": "https://thumb.tildacdn.com/tild6630-3466-4134-b037-353935313631/-/resize/500x500/-/format/webp/Frame_11-min.png",
       "description": "<p>\nPosition: Frontend teacher.\nResponsibilities: Explaining the material / Teaching a group of up to 15 people / Reviewing the code / Conducting lectures / Checking homework / Assistance in writing correct and easy code.\nLocation: Belarus / Russia / Ukraine / Poland / Georgia.\n</p>"
     },
     {
       "name": "Peleng",
       "period": "08/2015 - 11/2021",
-      "front": "https://svgshare.com/i/qt3.svg",
+      "front": "https://i.imgur.com/IyY8yF6.png",
       "back": "https://i.imgur.com/m2OnN7Y.png",
       "description": "<p>\nPosition: Setup engineer, CNC machines.\nResponsibilities: Development of technology for processing a part / Writing control programs for machine tools / Creation of a 3D model of the part / Full support of the part during processing / Reading and creating drawings / Manufacturing of high-precision parts for the space and military industries.\nLocation: Belarus.\n</p>"
     },
     {
       "name": "Freelance",
       "period": "12/2018 - 01/2022",
-      "front": "https://svgshare.com/i/qsF.svg",
+      "front": "https://i.imgur.com/fQdO3cT.png",
       "back": "https://i.imgur.com/BQJLzqi.png",
       "description": "<p>\nPosition: Software engineer.\nResponsibilities: Creation of SPA applications / Creating a MERN stack of applications / Implementation of practical and term papers / Support for commercial projects / Creation native applications.\nLocation: Belarus.\n</p>\n<p>\nProject: Platform for interns to team up and showcase their work to recruiters.\nRegion: Belarus.\nStack: React, TypeSctipt, Redux, Node.js, MongoDB.\nResponsibilities: Creating an application from scratch / developing its architecture / further developing it / delegating responsibilities / managing teams / issuing and creating tasks / managing sprints / developing the business part of the product and promoting it to the masses / managing teams in a total of 40 people.\nPosition: Frontend developer / Team Lead / Product Owner / Project Manager.\n</p>"
     }
   ],
-  "about": "<p>\nSoftware Developer with 4 years of commercial development. Professional possession of HTML,\nCSS, JavaScript, TypeScript, Angular, React, Node. Capable to work alone and in large teams.I have team leadership skills. Capable of analysis and expertise of the project and tasks.\n\nI have experience teaching in groups of up to 15 people in the direction of front-end\ndevelopment.\n</p>"
+  "about": "<p>\nSoftware Developer with 4 years of commercial development. Professional possession of HTML,\nCSS, JavaScript, TypeScript, Angular, React, Node. Capable to work alone and in large teams. I have team leadership skills. Capable of analysis and expertise of the project and tasks.\n\nI have experience teaching in groups of up to 15 people in the direction of front-end\ndevelopment.\n</p>"
 }

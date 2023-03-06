@@ -5,7 +5,6 @@ const skillBox = document.querySelector(".skills__main");
 const languageBox = document.querySelector(".skills__language");
 const studyBox = document.querySelector(".skills__studies");
 const experienceBox = document.querySelector(".experience__wrapper");
-const navContainer = document.querySelector(".header__nav");
 const burgerContainer = document.querySelector(".sidebar__nav");
 const burgerButton = document.querySelector(".header__burger button");
 const sidebar = document.querySelector(".sidebar__wrapper");
@@ -41,23 +40,12 @@ const init = () => {
         element.addEventListener("mouseleave", () => (document.body.style.overflow = "auto"));
     });
 
-    navContainer.addEventListener("click", (event) => onNavLinkClick(event, false))
-    burgerContainer.addEventListener("click", (event) => onNavLinkClick(event, true))
+    burgerContainer.addEventListener("click", (event) => onNavLinkClick(event))
     burgerButton.addEventListener("click", () => onBurgerClick())
 };
 
-const onNavLinkClick = (event, isBurger) => {
+const onNavLinkClick = (event) => {
     if (event.target.tagName === 'A'){
-        event.preventDefault();
-        const id = event.target.getAttribute('href');
-
-        document.querySelector(id).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    }
-
-    if (isBurger) {
         onBurgerClick();
     }
 }
