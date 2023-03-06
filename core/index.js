@@ -40,26 +40,27 @@ const init = () => {
         element.addEventListener("mouseleave", () => (document.body.style.overflow = "auto"));
     });
 
-    burgerContainer.addEventListener("click", (event) => onNavLinkClick(event))
-    burgerButton.addEventListener("click", () => onBurgerClick())
+    burgerContainer.addEventListener("click", (event) => onNavLinkClick(event));
+    burgerButton.addEventListener("click", () => onBurgerClick());
 };
 
 const onNavLinkClick = (event) => {
-    if (event.target.tagName === 'A'){
+    if (event.target.tagName === "A") {
         onBurgerClick();
+        document.body.style.overflow = "auto";
     }
-}
+};
 
 const onBurgerClick = () => {
-    if(sidebar.classList.contains("active")) {
+    if (sidebar.classList.contains("active")) {
         sidebar.classList.add("close");
 
         setTimeout(() => {
             sidebar.classList.remove("close");
-        }, 2000)
+        }, 2000);
     }
-    sidebar.classList.toggle("active")
-}
+    sidebar.classList.toggle("active");
+};
 
 const createAbout = (text) => (document.querySelector(".about__description").innerHTML = text);
 
