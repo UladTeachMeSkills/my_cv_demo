@@ -3,12 +3,12 @@
     {
       "name": "React",
       "score": 96,
-      "additional": ["Type Script","Redux","FLUX","Hooks","MobX","Antd","Three-fiber","Three-drei","Mobx state tree","Webpack","Vite"]
+      "additional": ["Type Script","Redux","FLUX","Hooks","MobX","Antd","Three-fiber","Three-drei","Mobx state tree","Vite"]
     },
     {
       "name": "Java Script",
       "score": 98,
-      "additional": ["ES6+","jQuery","RESTful API","Webpack","Parcel","Gulp","Three JS","AJAX","WebSocket"]
+      "additional": ["ES6+","jQuery","RESTful API","Webpack","Parcel","Gulp","Three JS","AJAX","Web Socket"]
     },
     {
       "name": "Angular",
@@ -18,7 +18,7 @@
     {
       "name": "HTML / CSS",
       "score": 97,
-      "additional": ["BEM","Less","SASS","Responsive","Cross-browser","Accessebility","WCAG"]
+      "additional": ["BEM","Less","SASS","Cross-browser","WCAG"]
     },
     {
       "name": "Node",

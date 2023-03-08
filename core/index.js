@@ -71,8 +71,10 @@ const createSkill = (item) => {
     div.innerHTML = getTemplate;
 
     let description = createDescriptionForSkill(item.name);
+    let additional = createCircularAdditional(item.additional);
 
     div.appendChild(description);
+    div.appendChild(additional);
     skillBox.appendChild(div);
 
     const path = div.querySelector("path");
@@ -82,6 +84,8 @@ const createSkill = (item) => {
     path.getBoundingClientRect();
     path.style.strokeDashoffset = Math.max(0, to);
     path.nextElementSibling.textContent = item.score / 10;
+
+    setCircularAdditional(additional);
 };
 
 const createLanguages = (item) => {
@@ -130,6 +134,38 @@ const createDescriptionForSkill = (name) => {
     div.className = "skill__name";
     div.innerHTML = `<p>${name}</p>`;
     return div;
+};
+
+const createCircularAdditional = (additional) => {
+    let div = document.createElement("div");
+    div.className = "skill__additional";
+
+    additional.forEach((item) => {
+        let span = document.createElement("span");
+        span.className = "skill__additional_item";
+        span.innerText = item;
+
+        div.appendChild(span);
+    });
+
+    return div;
+};
+
+const setCircularAdditional = (additional) => {
+    const items = additional.querySelectorAll(".skill__additional_item");
+    const length = items.length;
+    const arc = 2 * Math.PI * (1 / length);
+    const radius = 40;
+
+    for (let index = 0; index < length; index++) {
+        const angle = index * arc;
+
+        const x = radius * Math.cos(angle);
+        const y = radius * Math.sin(angle);
+
+        items[index].style.left = 50 + x + "%";
+        items[index].style.top = 50 + y + "%";
+    }
 };
 
 document.addEventListener("DOMContentLoaded", init);

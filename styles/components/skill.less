@@ -1,6 +1,7 @@
 .skill {
     max-width: 200px;
     padding: 5px;
+    position: relative;
 
     svg {
         display: inline-flex;
@@ -37,5 +38,58 @@
             .typography__extra-medium();
             text-align: center;
         }
+    }
+
+    &__additional {
+        position: absolute;
+        top: 0;
+        width: 340px;
+        height: 340px;
+        transform: translate(-22%, -20%);
+        transition: all 0.5s ease-in-out;
+        border-radius: 50%;
+        animation: spin 20s infinite linear;
+        opacity: 0;
+
+        &_item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            text-align: center;
+            .typography__paragraph-medium();
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            z-index: 100;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            animation: spin-reverse 20s infinite linear;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-22%, -20%) rotate(0deg);
+    }
+    to {
+        transform: translate(-22%, -20%) rotate(360deg);
+    }
+}
+
+@keyframes spin-reverse {
+    from {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(0deg);
     }
 }
