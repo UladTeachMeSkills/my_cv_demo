@@ -1,4 +1,3 @@
-import file from "../data/data.json";
 import { getTemplate } from "../templates/skill.js";
 
 const skillBox = document.querySelector(".skills__main");
@@ -9,7 +8,17 @@ const burgerContainer = document.querySelector(".sidebar__nav");
 const burgerButton = document.querySelector(".header__burger button");
 const sidebar = document.querySelector(".sidebar__wrapper");
 
-const init = () => {
+const getData = async () => {
+    return await fetch("https://647848d3362560649a2d78bf.mockapi.io/data")
+        .then((response) => {
+            if (!response.ok) throw Error(response.statusText);
+            return response.json();
+        })
+        .then((json) => json[0]);
+};
+
+const init = async () => {
+    const file = await getData();
     const skills = file.skills;
     const languages = file.languages;
     const studies = file.studies;
